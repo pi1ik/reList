@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "tunnel": "lt --port 3000 --subdomain sour-dryers-run"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.75.0",
@@ -26,6 +27,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.5",
+    "localtunnel": "^2.0.2",
     "ngrok": "5.0.0-beta.2",
     "tailwindcss": "^4",
     "typescript": "^5"
