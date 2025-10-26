@@ -58,6 +58,18 @@ export interface TelegramViewportChangedEvent {
   width: number;
 }
 
+// Возможные события Telegram WebApp
+export type TelegramEventName =
+  | "themeChanged"
+  | "viewportChanged"
+  | "mainButtonClicked"
+  | "backButtonClicked"
+  | "popupClosed"
+  | "settingsChanged"
+  | string; // оставляем string на случай других событий
+
+export type TelegramEventCallback<T = unknown> = (event: T) => void;
+
 export interface TelegramWebApp {
   initData: string;
   initDataUnsafe: {
@@ -93,8 +105,14 @@ export interface TelegramWebApp {
   showAlert: (message: string, cb?: () => void) => void;
   showConfirm: (message: string, cb?: (confirmed: boolean) => void) => void;
 
-  onEvent: (event: string, cb: (event: any) => void) => void;
-  offEvent: (event: string, cb: (event: any) => void) => void;
+  onEvent: <T = unknown>(
+    event: TelegramEventName,
+    cb: TelegramEventCallback<T>
+  ) => void;
+  offEvent: <T = unknown>(
+    event: TelegramEventName,
+    cb: TelegramEventCallback<T>
+  ) => void;
 
   setHeaderColor: (color: string) => void;
   setBackgroundColor: (color: string) => void;
