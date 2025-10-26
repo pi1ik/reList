@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "tunnel": "lt --port 3000 --subdomain sour-dryers-run"
+    "tunnel": "pnpm dlx ngrok http 3000"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.75.0",
