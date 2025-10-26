@@ -1,10 +1,11 @@
-import { bot } from "@/lib/bot";
 import { NextRequest, NextResponse } from "next/server";
+import { bot } from "@/lib/bot";
 
 export const POST = async (req: NextRequest) => {
   try {
     const body = await req.json();
-    await bot.handleUpdate(body); // обрабатываем Telegram updates
+    console.log("Incoming Telegram update:", body);
+    await bot.handleUpdate(body);
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error("[Telegram webhook error]", error);
@@ -12,7 +13,6 @@ export const POST = async (req: NextRequest) => {
   }
 };
 
-// Для проверки доступности вебхука в браузере
 export const GET = () => {
   return NextResponse.json({ message: "Telegram webhook endpoint is alive" });
 };
