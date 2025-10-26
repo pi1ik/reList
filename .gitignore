@@ -24,6 +24,7 @@
 .DS_Store
 *.pem
 register-webhook.ps1
+register-webhook-prod.ps1
 
 # debug
 npm-debug.log*

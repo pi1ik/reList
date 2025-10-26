@@ -95,5 +95,6 @@ export const useAppInit = () => {
     withLoading,
     setSafeArea,
     setContentSafeArea,
+    setIsVertical,
   ]);
 };
