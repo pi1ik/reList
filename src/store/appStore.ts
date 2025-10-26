@@ -13,7 +13,6 @@ export const useAppStore = create<AppState & AppActions>((set, get) => ({
   safeArea: { top: 0, bottom: 0, left: 0, right: 0 },
   contentSafeArea: { top: 0, bottom: 0, left: 0, right: 0 },
   viewport: undefined,
-  orientation: undefined,
   platform: undefined,
 
   // --- actions ---

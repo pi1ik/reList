@@ -26,7 +26,6 @@ export interface AppState {
   contentSafeArea: SafeArea;
   platform?: string;
   viewport?: Viewport;
-  orientation?: Orientation;
   isVertical: boolean;
 }
 
@@ -35,7 +34,6 @@ export interface AppActions {
   setSafeArea: (area: SafeArea) => void;
   setContentSafeArea: (area: SafeArea) => void;
   setViewport: (viewport: Viewport) => void;
-  setOrientation: (orientation: Orientation) => void;
   setIsVertical: (value: boolean) => void;
 
   // async
