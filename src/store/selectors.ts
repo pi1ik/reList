@@ -6,4 +6,3 @@ export const selectSafeArea = (state: AppState) => state.safeArea;
 export const selectContentSafeArea = (state: AppState) => state.contentSafeArea;
 export const selectPlatform = (state: AppState) => state.platform;
 export const selectViewport = (state: AppState) => state.viewport;
-export const selectOrientation = (state: AppState) => state.orientation;
