@@ -19,7 +19,6 @@ export const createAppActions = (
   setSafeArea: (area) => set({ safeArea: area }),
   setContentSafeArea: (area) => set({ contentSafeArea: area }),
   setViewport: (viewport) => set({ viewport }),
-  setOrientation: (orientation) => set({ orientation }),
   setIsVertical: (value) => set({ isVertical: value }),
 
   // --- async actions ---
