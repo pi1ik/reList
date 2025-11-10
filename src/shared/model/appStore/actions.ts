@@ -1,4 +1,4 @@
-import { AppState, AppActions } from "@/store/types";
+import { AppState, AppActions } from "@/shared/model/appStore/types";
 import { isTMA, retrieveLaunchParamsFp } from "@tma.js/sdk-react";
 
 export const createAppActions = (

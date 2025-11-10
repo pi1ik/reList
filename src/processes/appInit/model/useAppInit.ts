@@ -3,8 +3,8 @@
 import { useEffect } from "react";
 import { viewport, init as initSDK } from "@tma.js/sdk-react";
 import { on, off, postEvent } from "@tma.js/bridge";
-import { useAppStore } from "@/store/appStore";
-import { SafeArea } from "@/store/types";
+import { useAppStore } from "@/shared/model/appStore/appStore";
+import { SafeArea } from "@/shared/model/appStore/types";
 
 export const useAppInit = () => {
   const {
