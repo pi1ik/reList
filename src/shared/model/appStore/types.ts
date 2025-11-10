@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 export interface SafeArea {
   top: number;
   bottom: number;
