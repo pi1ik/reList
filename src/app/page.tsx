@@ -1,6 +1,6 @@
 "use client";
 
-import { useAppStore } from "@/store/appStore";
+import { useAppStore } from "@/shared/model/appStore/appStore";
 import { viewport } from "@tma.js/sdk-react";
 
 export default function HomePage() {

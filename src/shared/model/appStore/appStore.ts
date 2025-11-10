@@ -1,8 +1,8 @@
 "use client";
 
 import { create } from "zustand";
-import { AppState, AppActions } from "@/store/types";
-import { createAppActions } from "@/store/actions";
+import { AppState, AppActions } from "@/shared/model/appStore/types";
+import { createAppActions } from "@/shared/model/appStore/actions";
 
 export const useAppStore = create<AppState & AppActions>((set, get) => ({
   // --- state ---
