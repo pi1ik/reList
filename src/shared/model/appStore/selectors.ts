@@ -1,4 +1,4 @@
-import { AppState } from "@/store/types";
+import { AppState } from "@/shared/model/appStore/types";
 
 export const selectIsTMA = (state: AppState) => state.isTMA;
 export const selectIsLoading = (state: AppState) => state.isLoading;

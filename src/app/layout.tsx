@@ -2,11 +2,11 @@
 
 import React, { ReactNode } from "react";
 import "./globals.css";
-import { useAppStore } from "@/store/appStore";
-import { useAppInit } from "@/features/appInit/useAppInit";
-import { LoadingMessage } from "@/components/messages/LoadingMessage";
-import { NotTMAWarning } from "@/components/messages/NotTMAWarning";
-import { HorizontalWarning } from "@/components/messages/HorizontalWarning";
+import { useAppStore } from "@/shared/model/appStore/appStore";
+import { useAppInit } from "@/processes/appInit/model/useAppInit";
+import { LoadingMessage } from "@/processes/appInit/ui/LoadingMessage";
+import { NotTMAWarning } from "@/processes/appInit/ui/NotTMAWarning";
+import { HorizontalWarning } from "@/processes/appInit/ui/HorizontalWarning";
 
 interface RootLayoutProps {
   children: ReactNode;

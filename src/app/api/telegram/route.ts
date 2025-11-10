@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { bot } from "@/lib/bot";
+import { bot } from "@/shared/lib/bot";
 
 export const POST = async (req: NextRequest) => {
   try {
